@@ -150,7 +150,8 @@ PRODUCT_PACKAGES += \
     CMUpdater \
     CMAccount \
     CMHome \
-    CyanogenSetupWizard
+    CyanogenSetupWizard \
+    CameraNext
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
