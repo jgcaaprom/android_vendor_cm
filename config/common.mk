@@ -1,5 +1,9 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+WITH_DEXPREOPT := true
+WITH_DEXPREOPT_PIC := true
+DONT_DEXPREOPT_PREBUILTS := true
+
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
@@ -43,13 +47,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-    dalvik.vm.profiler=1
-    dalvik.vm.isa.arm.features=lpae,div \
     dalvik.vm.image-dex2oat-filter=everything \
-    dalvik.vm.dex2oat-filter=everything
+    dalvik.vm.dex2oat-filter=everything 
+
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+
+
 
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
