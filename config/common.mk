@@ -7,7 +7,7 @@ KRAIT_TUNINGS := true
 #FLOOP_NEST_OPTIMIZE := true
 #GRAPHITE_OPTS := true
 STRICT_ALIASING := true
-SNAP := true
+#SNAP := true
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
@@ -135,7 +135,6 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VoicePlus \
     Basic \
     libemoji \
     Terminal
