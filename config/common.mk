@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
+    ro.build.selinux=0
 
 
 
