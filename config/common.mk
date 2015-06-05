@@ -4,7 +4,7 @@ PRODUCT_BRAND ?= cyanogenmod
 WITH_DEXPREOPT := true
 #Rom Optimizations
 KRAIT_TUNINGS := true
-#FLOOP_NEST_OPTIMIZE := true
+FLOOP_NEST_OPTIMIZE := true
 #GRAPHITE_OPTS := true
 STRICT_ALIASING := true
 #SNAP := true
