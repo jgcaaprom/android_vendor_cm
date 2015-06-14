@@ -8,6 +8,7 @@ KRAIT_TUNINGS := true
 #GRAPHITE_OPTS := true
 STRICT_ALIASING := true
 #SNAP := true
+#BOARD_USES_QC_TIME_SERVICES := true
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
@@ -57,7 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=0
+    ro.boot.selinux=0
 
 
 
