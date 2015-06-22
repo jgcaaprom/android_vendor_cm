@@ -1,7 +1,6 @@
-PRODUCT_BRAND ?= cyanogenmod
+~PRODUCT_BRAND ?= cyanogenmod
 
 #Rom optimizations
-WITH_DEXPREOPT := true
 #Rom Optimizations
 KRAIT_TUNINGS := true
 #FLOOP_NEST_OPTIMIZE := true
