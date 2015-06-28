@@ -1,7 +1,7 @@
 ~PRODUCT_BRAND ?= cyanogenmod
 
 #Rom optimizations
-WITH_DEXPREOPT := true
+WITH_DEXPREOPT := false
 KRAIT_TUNINGS := true
 STRICT_ALIASING := true
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
