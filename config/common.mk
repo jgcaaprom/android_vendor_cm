@@ -1,13 +1,10 @@
 ~PRODUCT_BRAND ?= cyanogenmod
 
 #Rom optimizations
-#Rom Optimizations
+WITH_DEXPREOPT := true
 KRAIT_TUNINGS := true
-#FLOOP_NEST_OPTIMIZE := true
-#GRAPHITE_OPTS := true
 STRICT_ALIASING := true
-#SNAP := true
-#BOARD_USES_QC_TIME_SERVICES := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
@@ -108,7 +105,7 @@ PRODUCT_COPY_FILES +=  \
 
 # SuperSU
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/cm/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/supersu.zip \
     vendor/cm/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Enable SIP+VoIP on all targets
@@ -145,7 +142,6 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMWallpapers \
     CMFileManager \
-    Eleven \
     LockClock \
     CMAccount \
     CMHome \
