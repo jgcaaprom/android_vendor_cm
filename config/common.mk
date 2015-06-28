@@ -2,13 +2,9 @@ PRODUCT_BRAND ?= cyanogenmod
 
 #Rom optimizations
 WITH_DEXPREOPT := true
-#Rom Optimizations
 KRAIT_TUNINGS := true
-#FLOOP_NEST_OPTIMIZE := true
-#GRAPHITE_OPTS := true
 STRICT_ALIASING := true
-#SNAP := true
-#BOARD_USES_QC_TIME_SERVICES := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
