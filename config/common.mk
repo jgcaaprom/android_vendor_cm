@@ -2,7 +2,7 @@
 
 #Rom optimizations
 WITH_DEXPREOPT := false
-KRAIT_TUNINGS := true
+#KRAIT_TUNINGS := true
 STRICT_ALIASING := true
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
