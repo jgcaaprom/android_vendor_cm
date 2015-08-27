@@ -1,6 +1,12 @@
 PRODUCT_BRAND ?= cyanogenmod
 
 WITH_DEXPREOPT := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+#USE_CLANG_QCOM := true
+#CLANG_QCOM_COMPILE_BIONIC := true
+#USE_CLANG_QCOM_VERBOSE := true
+#CLANG_QCOM_COMPILE_MIXED := true
+STRICT_ALIASING := true
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
