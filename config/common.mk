@@ -134,7 +134,6 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMWallpapers \
     CMFileManager \
-    Eleven \
     LockClock \
     CMAccount \
     CMHome \
