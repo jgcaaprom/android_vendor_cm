@@ -8,11 +8,6 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 #CLANG_QCOM_COMPILE_MIXED := true
 #STRICT_ALIASING := true
 
-# Art Optimization
-PRODUCT_PROPERTY_OVERRIDES += \
-  dalvik.vm.image-dex2oat-filter=everything \
-  dalvik.vm.dex2oat-filter=everything
-
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
