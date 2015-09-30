@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
     CMAccount \
     CMHome \
     CyanogenSetupWizard \
-    CameraNext
+    CameraNext \
     CMSettingsProvider
 
 # CM Platform Library
