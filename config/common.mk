@@ -1,5 +1,8 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+WITH_DEXPREOPT := true
+WITH_BUSYBOX_LINKS := true
+
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
@@ -151,7 +154,8 @@ PRODUCT_PACKAGES += \
     CMUpdater \
     CyanogenSetupWizard \
     CMSettingsProvider \
-    ExactCalculator
+    ExactCalculator \
+    CameraNext
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
@@ -294,7 +298,7 @@ ifeq ($(CM_BUILDTYPE), RELEASE)
 else
     ifeq ($(PRODUCT_VERSION_MINOR),0)
         CM_BUILDTYPE := jgcaap
-        CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
+        CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
     else
         CM_BUILDTYPE := jgcaap
         CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
