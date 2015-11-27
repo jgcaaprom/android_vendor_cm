@@ -2,6 +2,7 @@ PRODUCT_BRAND ?= cyanogenmod
 
 WITH_DEXPREOPT := true
 WITH_BUSYBOX_LINKS := true
+ALLOW_SE_JAVA7 := true
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
