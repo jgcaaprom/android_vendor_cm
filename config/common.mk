@@ -1,5 +1,7 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+WITH_DEXPREOPT := true
+
 TARGET_NO_SEPARATE_RECOVERY := true
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
