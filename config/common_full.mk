@@ -6,13 +6,8 @@ include vendor/cm/config/cm_audio.mk
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    Galaxy4 \
-    HoloSpiralWallpaper \
     LiveWallpapers \
     LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    NoiseField \
-    PhaseBeam \
     PhotoTable \
     SoundRecorder \
     PhotoPhase \
@@ -30,4 +25,4 @@ PRODUCT_PACKAGES += \
     unzip \
     vim \
     wget \
-    zip
+    zip 
