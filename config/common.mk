@@ -144,7 +144,8 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
-    CameraNext
+    CameraNext \
+    SnapdragonCamera
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
