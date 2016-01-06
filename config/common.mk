@@ -147,7 +147,8 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
-    CameraNext
+    CameraNext \
+    SnapdragonCamera
 
 # Exchange support
 PRODUCT_PACKAGES += \
