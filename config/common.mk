@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
-    SnapdragonCamera
+    Snap
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
