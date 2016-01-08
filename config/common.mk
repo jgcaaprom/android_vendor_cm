@@ -138,7 +138,7 @@ PRODUCT_PACKAGES += \
     CyanogenSetupWizard \
     CMSettingsProvider \
     ExactCalculator \
-    Snap
+    SnapdragonCamera
 
 # Exchange support
 PRODUCT_PACKAGES += \
