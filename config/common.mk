@@ -199,7 +199,7 @@ PRODUCT_PACKAGES += \
     su
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
+    persist.sys.root_access=3
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
