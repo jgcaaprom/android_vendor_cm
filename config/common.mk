@@ -3,6 +3,8 @@ PRODUCT_BRAND ?= cyanogenmod
 WITH_DEXPREOPT := true
 WITH_BUSYBOX_LINKS := true
 
+BOARD_USE_LZ4_RD_COMPRESSOR :=true
+
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
@@ -134,10 +136,10 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Eleven \
     LockClock \
-    CMAccount \
     CMSettingsProvider \
     ExactCalculator \
-    Snap
+    Snap \
+    BasicDreams
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
