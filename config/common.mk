@@ -137,8 +137,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMSettingsProvider \
     ExactCalculator \
-    Snap \
-    BasicDreams
+    BasicDreams \
+    Camera
 
 # Exchange support
 PRODUCT_PACKAGES += \
