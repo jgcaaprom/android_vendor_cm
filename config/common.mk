@@ -138,7 +138,7 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     ExactCalculator \
     BasicDreams \
-    Camera
+    LiveLockScreenService
 
 # Exchange support
 PRODUCT_PACKAGES += \
