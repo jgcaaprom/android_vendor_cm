@@ -62,6 +62,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    vendor/cm/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
    vendor/cm/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+# Audio FX
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/AudioFX/AudioFX.apk:system/priv-app/AudioFX/AudioFX.apk
 
 
 # Backup Tool
@@ -130,7 +133,6 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Trebuchet \
-    AudioFX \
     CMWallpapers \
     CMFileManager \
     Eleven \
