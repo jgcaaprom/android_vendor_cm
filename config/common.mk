@@ -141,7 +141,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     BasicDreams \
     LiveLockScreenService \
-    WeatherProvider
+    WeatherProvider \
+    DataUsageProvider
 
 # Exchange support
 PRODUCT_PACKAGES += \
