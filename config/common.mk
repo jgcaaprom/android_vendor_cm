@@ -138,7 +138,8 @@ PRODUCT_PACKAGES += \
     LiveLockScreenService \
     WeatherProvider \
     DataUsageProvider \
-    ModioFX
+    ModioFX \
+    WallpaperPicker
 
 # Exchange support
 PRODUCT_PACKAGES += \
