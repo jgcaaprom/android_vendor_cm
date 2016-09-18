@@ -1,5 +1,7 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+WITH_DEXPREOPT := true
+
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
@@ -124,7 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
 # Theme engine
-include vendor/cm/config/themes_common.mk
+#include vendor/cm/config/themes_common.mk
 
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
@@ -138,7 +140,7 @@ PRODUCT_PACKAGES += \
     Development \
     BluetoothExt \
     Profiles \
-    ThemeManagerService \
+#    ThemeManagerService \
     WeatherManagerService
 
 # Optional CM packages
@@ -157,7 +159,6 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMWallpapers \
     CMFileManager \
-    Eleven \
     LockClock \
     CMUpdater \
     CyanogenSetupWizard \
@@ -165,8 +166,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
-    DataUsageProvider \
-    WallpaperPicker
+#    DataUsageProvider \
 
 # Exchange support
 PRODUCT_PACKAGES += \
