@@ -122,16 +122,15 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMFileManager \
     CMSettingsProvider \
-    CMUpdater \
     CMWallpapers \
-    CyanogenSetupWizard \
     Eleven \
     ExactCalculator \
     LiveLockScreenService \
     LockClock \
     Trebuchet \
     WallpaperPicker \
-    WeatherProvider
+    WeatherProvider \
+    masquerade
 
 # Exchange support
 PRODUCT_PACKAGES += \
