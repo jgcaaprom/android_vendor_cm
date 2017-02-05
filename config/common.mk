@@ -2,6 +2,10 @@ PRODUCT_BRAND ?= LineageOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
+WITH_DEXPREOPT := true
+
+TARGET_USE_SDCLANG := true
+
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
